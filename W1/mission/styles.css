@@ -1,0 +1,30 @@
+
+.content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5fr;
+}
+
+
+h2 {
+    color: #006EB6;
+}
+.logo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+body {
+    border: 1px solid black; 
+  }
+  
