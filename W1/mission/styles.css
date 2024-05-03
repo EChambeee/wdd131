@@ -26,5 +26,16 @@ h2 {
 }
 body {
     border: 1px solid black; 
-  }
+}
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+.dark .logo {
+    filter: invert(1);
+}
+.dark h2 {
+    color: #4D90FE;
+}
+
   
