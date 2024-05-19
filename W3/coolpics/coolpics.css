@@ -1,5 +1,4 @@
 /* Global styles and CSS variables */
-
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
 :root {
@@ -26,22 +25,22 @@ a:visited {
 
 header,
 footer {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    max-width: 100%; /* Adjusted maximum width */
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 255, 0.2); /* Faint border */
-    padding: 1rem;
-    text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  padding: 1rem;
+  text-align: center;
 }
 
 main {
-    background-color: var(--secondary-color);
-    max-width: 100%; 
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 255, 0.2); 
-    padding: 1rem;
-    text-align: center;
+  background-color: var(--secondary-color);
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  padding: 1rem;
+  text-align: center;
 }
 
 button.menu {
@@ -58,35 +57,89 @@ img {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
 }
 
 nav {
-    display: flex; 
-    justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
-  
+
 nav p {
-    margin: 0 10px; 
+  margin: 0 10px;
 }
 
 footer {
-    text-align: left;
+  text-align: left;
 }
+
+/* Hide menu items by default on small screens */
+.hide {
+  display: none;
+}
+
+/* Responsive design: Show menu button and hide menu items on small screens */
+@media (max-width: 600px) {
+  .menu-button {
+    display: block;
+  }
+  nav.menu.hide {
+    display: none;
+  }
+}
+
+/* Modal viewer styles */
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  z-index: 1000;
+}
+
+.viewer img {
+  max-height: 100%;
+  max-width: 90%;
+}
+
+.close-viewer {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  grid-row: 1;
+  align-self: start;
+}
+
+@media (min-width: 601px) {
+  .viewer img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
 @media screen and (min-width: 700px) {
-    .gallery {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   main {
     grid-template-columns: repeat(3, 1fr);
   }
-  
   header button.menu {
     display: none;
   }
