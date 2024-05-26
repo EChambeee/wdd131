@@ -1,0 +1,138 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #473144;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #EFC69B;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    color: #473144;
+}
+
+nav ul.main-nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: right;
+    border-top: 1px solid #EFC69B;
+    border-bottom: 1px solid #EFC69B;
+}
+
+nav ul.main-nav li a {
+    text-decoration: none;
+    color: #AF1B3F;
+    font-size: 1.2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.filter {
+    border: 1px solid #EFC69B;
+    padding: 10px;
+    height: fit-content;
+    background-color: #f9f9f9;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #EFC69B;
+    margin: 20px 0;
+}
+
+.details {
+    text-align: right;
+    font-size: 0.9em;
+    line-height: 1.6;
+    border-right: 1px solid #EFC69B;
+    padding-right: 10px;
+}
+
+.details time {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.content {
+    text-align: center; 
+}
+
+.content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #AF1B3F;
+}
+
+.content img {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%;
+    border: 1px solid #EFC69B;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1em;
+    color: #473144;
+}
+
+.content a {
+    color: #AF1B3F;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #AF1B3F;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #EFC69B;
+    color: #473144;
+    border-top: 1px solid #473144;
+}
