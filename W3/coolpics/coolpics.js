@@ -1,4 +1,3 @@
-// script.js
 function viewerTemplate(pic, alt) {
     return `
         <div class="viewer">
