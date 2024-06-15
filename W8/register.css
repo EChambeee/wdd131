@@ -1,0 +1,86 @@
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .item {
+    margin-bottom: 10px;
+  }
+  
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .columns .item {
+    flex: 1 1 50%;
+    padding-right: 10px;
+  }
+  
+  .columns .item:nth-child(2n) {
+    padding-right: 0;
+  }
+  
+  .columns .item:nth-child(2n+1) {
+    padding-right: 10px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question-answer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .question-answer div {
+    flex: 1 1 50%;
+  }
+  
+  .btn-block {
+    text-align: center;
+  }
+  
+  .btn-block button {
+    background: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-block button:hover {
+    background: #1e90ff;
+  }
+  
+  .participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  button#add {
+    grid-column: span 2;
+  }
+  
