@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A collection of delicious recipes">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="http://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="recipes.css">
+    <title>Recipe Book</title>
+</head>
+<body>
+    <header>
+        <img src="images/recipe-book.png" alt="Recipe Book Logo">
+        <h1>RecipeBook</h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" placeholder="Find a recipe" aria-label="Search for recipes">
+        </form>
+        <section class="recipe">
+            <img src="images/apple-crisp.jpg" alt="Apple Crisp">
+            <div>
+                <h2>Apple Crisp</h2>
+                <span
+                    class="rating"
+                    role="img"
+                    aria-label="Rating: 4 out of 5 stars"
+                >
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="font-size: 0.6em;"><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></p>
+        <div class="social">
+            <a href="#"><img src="images/instagram_icon.svg" alt="Instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="YouTube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest icon"></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
