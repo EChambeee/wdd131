@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --primary-color: #1C2238;
+  --secondary-color: #298F2C;
+  --accent1-color: #68E7CF;
+  --accent2-color: white;
+ 
+  --heading-font: "Playfair Display";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  --headline-color-on-white: #1C2238;  /* headlines on a white background */ 
+  --headline-color-on-color: #68E7CF; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #298F2C; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #1C2238  ;
+  --nav-link-color: #1C2238;
+  --nav-background-color: #298F2C;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #1C2238;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1C2238;
+  color: white;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+main {
+  padding: 20px;
+}
+
+.tutorial {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tutorial-pic {
+  width: 22%;
+  height: 200px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.descriptions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.description {
+  width: 22%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+footer {
+  background-color: #1C2238;
+  color: #298F2C;
+  padding: 25px 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social img {
+  padding-top: 15px;
+}
+footer p {
+  font-size: 1.2em;
+  font-family: var(--paragraph-font);
+  color: #298F2C;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #68E7CF;
+}
